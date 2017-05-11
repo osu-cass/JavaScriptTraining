@@ -24,5 +24,5 @@ Please read my take on [JavaScript best practices](topics/best-practices.md) if 
 - [Questions](questions.md)
 - [Answers](answers.md)
 
-<hr>
-By @maccelerated and @RikkiGibson.
+## Colophon
+Drafted by [@maccelerated](https://github.com/maccelerated) with guidance from [@RikkiGibson](https://github.com/RikkiGibson).
