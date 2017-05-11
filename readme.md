@@ -23,3 +23,6 @@ Please read my take on [JavaScript best practices](topics/best-practices.md) if 
 ## Little Quiz
 - [Questions](questions.md)
 - [Answers](answers.md)
+
+<hr>
+By @maccelerated and @RikkiGibson.
