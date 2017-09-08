@@ -1,28 +1,31 @@
 # JavaScript Training
 
-It will be a lot easier to understand JavaScript if you have basic familiarity with:
-- [HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML)
-- any C-like programming language (C, C++, C#, Java, etc).
+It will be a lot easier to understand JavaScript if you have basic familiarity with C-like programming languages, id est C++, C#, and Java.
 
 *Feel free to open a Node REPL or browser console window to follow along. There is no project to do.*
 
-Please read my take on [JavaScript best practices](topics/best-practices.md) if nothing else.
+Please read my take on [best practices](modern/best-practices.md) if nothing else.
 
-## Topics
-- [Overview](topics/overview.md)
-- [Types and Variables](topics/types.md)
-- [Truthiness](topics/truthiness.md)
-- [`==` vs `===`](topics/equals-equals.md)
-- [`&&` and `||`](topics/and-or.md)
-- [Scope and Closure](topics/scope.md)
-- [`this`](topics/this.md)
-- [Strict Mode](topics/strict-mode.md)
-- [ECMAScript 2015](topics/es6.md)
-- [Promises](topics/promises.md)
+## Level 1
+- [Overview](basics/overview.md)
+- [Types](basics/types.md)
+- [Variables](basics/variables.md)
+- [Functions](basics/functions.md)
+- [Truthiness](basics/truthiness.md)
+- [`==` vs `===`](basics/equals-equals.md)
+- [`&&` and `||`](basics/and-or.md)
+- [Quiz](basics/quiz.md)
 
-## Little Quiz
-- [Questions](questions.md)
-- [Answers](answers.md)
+## Level 2
+- Using the Chrome debugger
+- [Promises](modern/promises.md)
+- [ECMAScript 2015](modern/es6.md)
+- ECMAScript 2016
+- ECMAScript 2017
 
-## Colophon
-Drafted by [@maccelerated](https://github.com/maccelerated) with guidance from [@RikkiGibson](https://github.com/RikkiGibson).
+## Time Machine
+If you need to work with old JS.
+
+- [Strict Mode](oldies/strict-mode.md)
+- [Function Scope](oldies/scope.md)
+- [`this` Problems](oldies/this.md)

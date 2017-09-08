@@ -5,7 +5,7 @@
 root = true
 
 [*]
-indent_style = space
+indent_style = tab
 indent_size = 2
 end_of_line = lf
 charset = utf-8
@@ -14,4 +14,4 @@ charset = utf-8
 
 [*.{md,markdown}]
 indent_style = tab
-indent_size = 4
+indent_size = 2

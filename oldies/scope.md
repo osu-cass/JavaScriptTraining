@@ -3,7 +3,7 @@
 ## Function Variables
 JavaScript's `var` keyword creates variables with function scope.
 
-```JavaScript
+```js
 function tryScope (input) {
 
   if (input) {
@@ -24,7 +24,7 @@ Notice how `output` climbs out of the `if`'s statement block, but stays inside o
 ## Function Closures
 Here's a horribly complex way to try and print incremental numbers.
 
-```JavaScript
+```js
 var actions = [];
 
 for (var i = 0; i < 3; i++) {
@@ -45,11 +45,11 @@ You might be dismayed to see this prints `3` three times. I'll break down what i
 - Which means `i < 3` fails before the fourth iteration
 - The loop iterates `i` through all 0, 1, 2, *and 3*
 
-When the array of functions is executed, each function is referencing the same `var i`, so they all print the same value. Closures do not copy the value, they instead share the reference.
+When the array of functions is interpreted, each function is referencing the same `var i`, so they all print the same value. *Closures do not copy the value, they instead share the reference.*
 
 The fix is to create a new function scope with a variable containing the iterator value we want and close over that instead. Using `let i` instead of `var i` will also fix the issue.
 
-```JavaScript
+```js
 var actions = [];
 
 function createAction (index) {

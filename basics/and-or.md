@@ -2,25 +2,26 @@
 
 Now that you know about truthiness, you can understand the Boolean operators.
 
-```JavaScript
+```js
 'a' && 'b'  // 'b'
  0  || 'b'  // 'b'
 ```
 
 As you might have noticed, `&&` (and) and `||` (or) don't return Boolean values. They short-circuit the value that breaks or completes the logic.
 
-```JavaScript
+```js
  0  && 'b' // 0
 'a' &&  0  // 0
 ```
 
-```JavaScript
+```js
  0  || 'b' // 'b'
 'a' ||  0  // 'a'
 ```
 
-You will probably only use these operators for existence though.
-```JavaScript
+You can also use these operators for null coalesce.
+
+```js
 var userUnit = metrics && metrics.unit; // null safety example
 var realUnit = userUnit || 'meters';    // default value example
 ```

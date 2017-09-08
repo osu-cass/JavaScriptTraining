@@ -1,8 +1,8 @@
-## im 12 and what is `this`
+## what is `this`
 
 In order to add a level of object-oriented structure to JavaScript, this is an always-accessible keyword `this`. But, it doesn't make sense that `this` is accessible outside of a class method, right?
 
-```javascript
+```js
 // Declare a function in an object
 var actions = {
   otherValue: 'other value',
@@ -16,7 +16,7 @@ actions.doNothing(); // 'other value'
 
 You should think of using the prefix `actions.` as the thing that sets `this`. Anywhere a function gets called without the named prefix will not have `this` set to what you expect.
 
-```javascript
+```js
 var extractedFunction = actions.doNothing;
 // Calling the function does NOT do what you expect.
 extractedFunction(); // undefined
@@ -24,15 +24,15 @@ extractedFunction(); // undefined
 
 You will not normally run into problems until you start using event handlers.
 
-```javascript
+```js
 button.onclick = actions.doNothing;
 // later, internally, this ends up being called like:
-button.onclick(); // will output that button.otherValue is undefined
+button.onclick(); // will error that button.otherValue is undefined
 ```
 
-Important! `this` is scoped to a function expression, so you may need something to help.
+Important! `this` is scoped to a function expression, so you may need some other var to help.
 
-```javascript
+```js
 var myActionFactory = {
   value: 42,
   createAction: function () {

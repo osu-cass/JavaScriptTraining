@@ -1,17 +1,19 @@
 ## Abstract and Strict Comparison
 
-JavaScript's comparison `==` operator is *not at all* like C#'s or Java's. Use `===` instead.
+JavaScript's comparison `==` operator is *not at all* like C#'s or Java's.
+
+> Just always use `===` please.
 
 This [example from MDN][1] shows how abstract equality casts types before comparing.
 
 [1]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators
 
-```JavaScript
- 1   ==  1        // true
-'1'  ==  1        // true
- 1   == '1'       // true
- 0   == false     // true
- 0   == null      // false
+```js
+ 1  ==  1        // true
+'1' ==  1        // true
+ 1  == '1'       // true
+ 0  == false     // true
+ 0  == null      // false
 
 var object1 = {'value': 'key'};
 var object2 = {'value': 'key'};
@@ -21,12 +23,11 @@ object1 == object2 // false
 null  == undefined // true
 null  == false     // false, weird right?
 false == undefined // false, also
-
 ```
 
 Abstract inequality is similar.
 
-```JavaScript
+```js
 1 !=   2     // true
 1 !=  '1'    // false
 1 !=  "1"    // false
@@ -38,10 +39,7 @@ Abstract inequality is similar.
 
 Often it is better to avoid abstract equality comparison and prevent unintentional behavior.
 
-```JavaScript
+```js
 3 === 3   // true
 3 === '3' // false
-var object1 = {'value': 'key'};
-var object2 = {'value': 'key'};
-object1 === object2 // false
 ```

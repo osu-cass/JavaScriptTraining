@@ -1,19 +1,19 @@
 ## 'use strict';
 
-Put this at the top of your script files *when you **are not** using build tools* and reap benefits.
+Put this at the top of your script files *when you* **are not** *using any build tools* and reap benefits.
 
 There are actually [a lot of things][1] that this declaration does, but here are some.
 
 [1]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
 
 ### Setting undeclared variables becomes an error
-```JavaScript
+```js
 'use strict';
 value = 42; // throws ReferenceError
 ```
 
 ### Setting parameters becomes an error
-```JavaScript
+```js
 'use strict';
 function fn (a) {
   a = 42; // throws
@@ -21,14 +21,14 @@ function fn (a) {
 ```
 
 ### Duplicate object keys becomes an error
-```JavaScript
+```js
 'use strict';
 var o = { p: 1, p: 2 }; // !!! syntax error
 ```
 
 ### Setting properties on primitives becomes an error
 You can use `'use strict'` within function scope.
-```JavaScript
+```js
 (function() {
   'use strict';
   false.true = '';         // TypeError
@@ -38,7 +38,7 @@ You can use `'use strict'` within function scope.
 ```
 
 ### Deleting plain names becomes error
-```JavaScript
+```js
 'use strict';
 var x;
 delete x; // !!! syntax error
