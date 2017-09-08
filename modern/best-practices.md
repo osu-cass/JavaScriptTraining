@@ -1,6 +1,8 @@
 # Best Practices
 Take these with a grain of salt: I haven't been in the business very long.
 
+https://medium.com/javascript-scene/elements-of-javascript-style-caa8821cb99f
+
 ---
 ## Write What You Mean
 JavaScript is an extremely flexible language, and often there are countless ways to do a particular thing.
