@@ -14,7 +14,6 @@ Please read my take on [best practices](modern/best-practices.md) if nothing els
 - [Truthiness](basics/truthiness.md)
 - [`==` vs `===`](basics/equals-equals.md)
 - [`&&` and `||`](basics/and-or.md)
-- [Quiz](basics/quiz.md)
 
 ## Level 2
 - Using the Chrome debugger
@@ -22,6 +21,7 @@ Please read my take on [best practices](modern/best-practices.md) if nothing els
 - [ECMAScript 2015](modern/es6.md)
 - ECMAScript 2016
 - ECMAScript 2017
+- [Quiz](modern/quiz.md)
 
 ## Time Machine
 If you need to work with old JS.
