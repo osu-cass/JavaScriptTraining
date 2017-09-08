@@ -3,6 +3,13 @@ JavaScript gets **seriously** easier to write and debug in modern versions.
 
 I cannot overstate how much better the language has gotten in the last five years.
 
+## Template Strings
+Use these instead of string concatenation.
+
+```js
+const legalName = `${givenName} ${familyName}`
+```
+
 ## `const` and `let`
 If your JavaScript environment supports the `const` or `let` keywords (modern browsers, Node.js, TypeScript), you should use them. `const` makes it so a variable can only be assigned once, at the time it is declared. `let` allows you to assign to the variable later, but it uses "block scoping" instead of "function scoping", which is a really good thing.
 
