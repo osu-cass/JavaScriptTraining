@@ -11,12 +11,12 @@ Everything in JavaScript is an object or primitive type. Even `Array` basically 
 
 ```js
 // An implicitly-named function
-const doNothing2 = function () {}
+var doNothing2 = function () {}
 // An implicitly-named arrow function
 const doNothing3 = () => {}
 ```
 
-Also keep in mind function arguments can be omitted, but they will always be applied in order. It is not smart enough to know what values are meant to pair with which parameters. If you see vendor libraries "fix" method calls with missing parameters, that is not JavaScript but a developer helping you out.
+Also keep in mind function arguments can be omitted, but they will always be applied in order.
 
 ```js
 function list3Things (a, b, c) {
@@ -35,3 +35,5 @@ list3Things('a', 'c');
 // c
 // undefined
 ```
+
+It is not smart enough to know what values are meant to pair with which parameters. If you see vendor libraries "fix" method calls with missing parameters, that is not JavaScript but a developer helping you out.

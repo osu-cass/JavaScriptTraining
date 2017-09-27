@@ -1,17 +1,18 @@
 # Types
+JavaScript is loosely typed (a dynamic language) and has [seven data types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures).
 
-`typeof` is safe to call on anything, including undefined names or vars.
+`typeof` is safe to call on anything, including undefined variables, but it [does not return the types you expect](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof).
 
 ### Boolean, Number, and String
 
 ```js
-const a = true	// Booleans are true or false
-const b = 3.14	// Numbers are 64-bit floating point (IEEE 754)
-const c = 'hi'	// Strings are array-like lists of strings
-'h'[0] === 'h'	// true: beware infinite recursion
+const a = true	// boolean values are true or false
+const b = 3.14	// number values are 64-bit floating point (IEEE 754)
+const c = 'hi'	// string values are array-like lists of strings
+'h'[0] === 'h'	// beware infinite string recursion
 ```
 
-### Number `NaN`
+### Special number `NaN`
 Some mathematical operations will return the special number `NaN`. All comparisons with `NaN` are false because it is the impossible value, so use the global function `isNaN()` to test instead of equality.
 
 ```js

@@ -6,6 +6,8 @@ There are actually [a lot of things][1] that this declaration does, but here are
 
 [1]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
 
+Many modern JS environments have this enabled by default, or similar rules in place.
+
 ### Setting undeclared variables becomes an error
 ```js
 'use strict';

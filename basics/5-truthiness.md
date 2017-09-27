@@ -1,11 +1,10 @@
 ### Truthiness
-
-In JavaScript, all values can be treated as Boolean. Which values are treated as true or false is called their "truthiness".
+Truthiness is the process of simplifying any value to `true` or `false`, like during `if` statements or conditionals.
 
 ```js
-var something = {};
+const something = {}
 if (something) {
-  console.log('something is truthy');
+  console.log(`something is truthy`)
 }
 
 // You can also use the NOT operator to get falsyness
@@ -18,7 +17,7 @@ First, understand which values are falsy.
 ```js
 Boolean(false)     	// yep
 Boolean(0)					// zero
-Boolean(-0)					// really
+Boolean(-0)					// this exists
 Boolean('')					// the empty string
 Boolean(null)				// null
 Boolean(undefined)	// undefined variables
