@@ -1,8 +1,9 @@
 # JavaScript Speedtraining
+This is an accelerated introduction to modern JavaScript.
 
-- Read every snippet.
-- If you cannot predict what a code snippet will do, read the document linked in the heading.
-- If you are familiar with the concept being demonstrated, move on to the next snippet.
+1. Read every snippet.
+2. Click the document linked in the snippet's header.
+3. Once you are familiar with the concept being demonstrated, move on to the next snippet.
 
 JavaScript is the [most popular programming language](https://stackoverflow.com/insights/survey/2017/#technology) in the world. The language has some unusual design choices and pitfalls, many of which owe to the fact that it was [originally designed in 10 days by one person](https://www.w3.org/community/webed/wiki/A_Short_History_of_JavaScript) and used by a [very young, naïve Internet](https://upload.wikimedia.org/wikipedia/commons/6/69/Netscape_Navigator_2_Screenshot.png). It will be a lot easier to understand JavaScript if you have basic familiarity with C-like programming languages, id est C++, C#, or Java.
 
@@ -73,7 +74,44 @@ Promise.resolve(`hey`)
 .catch(err => console.error(err))
 ```
 
+### 10 TODO: Prototypes
+```js
+Array.prototype
+```
+
+## Workflow
+
+### 1 [JS for Web](workflow/js-for-web.md)
+```js
+const messageElement = document.getElementById('message')
+messageElement.innerText = 'Hello world, from JS!'
+```
+
+### 2 [Project Structure](workflow/project-structure.md)
+
+```js
+// numbers.js
+const Numbers = {
+	ONE: 1,
+	TWO: 2
+}
+```
+
+```js
+console.log(Numbers.ONE + Numbers.TWO)
+```
+
+### 3 TODO: Debugging
+
+### 4 TODO: Modules (on web browsers)
+https://paulirish.github.io/es-modules-todomvc/
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import#Browser_compatibility
+
+### 5 TODO: Modules (on Node.js)
+
+
 ## Best Practices
+*Disclaimer: "how" to write JavaScript is always going to be an opinion, and I haven't been in the business very long. Take this advice with a grain of salt and skepticism.*
 
 - [Write functional code](goodness/functional-code.md)
 - [Use arrow functions](goodness/arrow-functions.md)

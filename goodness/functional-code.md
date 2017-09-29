@@ -1,6 +1,8 @@
 # Functional Code
 Strive to write functions that accept an initial state, and return a new state.
 
+https://hackernoon.com/a-quick-introduction-to-functional-javascript-7e6fe520e7fa
+
 This leads to more easily tested, readable, and terse code.
 
 ```js
