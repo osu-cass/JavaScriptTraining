@@ -1,4 +1,4 @@
-# JavaScript Speedtraining
+# JavaScript Speed Training
 This is an accelerated introduction to modern JavaScript.
 
 1. Read every snippet.
@@ -87,25 +87,25 @@ const messageElement = document.getElementById('message')
 messageElement.innerText = 'Hello world, from JS!'
 ```
 
-### 2 [Project Structure](workflow/project-structure.md)
-
+### 2 [Modules (for web)](workflow/modules-web.md)
 ```js
 // numbers.js
-const Numbers = {
-	ONE: 1,
-	TWO: 2
-}
+export const ONE = 1
+export const TWO = 2
+// index.js
+import {ONE, TWO} from './number.js'
+console.log(ONE + TWO)
 ```
 
+### 3 [Namespacing](workflow/namespacing.md)
 ```js
+// numbers.js
+const Numbers = {ONE: 1, TWO: 2}
+// index.js
 console.log(Numbers.ONE + Numbers.TWO)
 ```
 
-### 3 TODO: Debugging
-
-### 4 TODO: Modules (on web browsers)
-https://paulirish.github.io/es-modules-todomvc/
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import#Browser_compatibility
+### 4 [Debugging](./workflow/debugging.md)
 
 ### 5 TODO: Modules (on Node.js)
 
