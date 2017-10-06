@@ -9,6 +9,7 @@ With this idea in mind, there are many improvements to how JS is written for web
 
 You'll want to be familiar with HTML and how web browsers work. You can use the [html5-boilerplate](https://github.com/h5bp/html5-boilerplate) to see a relatively complete example for modern page design.
 
+
 ## [The &lt;script&gt; Tag](http://javascript.crockford.com/script.html)
 This HTML tag is the way to run JavaScript on a web page, either inline or with another file.
 
@@ -17,6 +18,7 @@ This HTML tag is the way to run JavaScript on a web page, either inline or with 
 <script src="index.js" defer></script>
 ```
 
+
 ## [Document](https://devdocs.io/dom/document)
 The global variable `document` is how JavaScript manipulates the contents of a web page.
 
@@ -24,6 +26,28 @@ The global variable `document` is how JavaScript manipulates the contents of a w
 const messageElement = document.getElementById('message')
 messageElement.innerText = 'Hello world, from JS!'
 ```
+
+
+## [Window](https://devdocs.io/dom/window)
+The global variable `window` is where JavaScript interacts with the browser's chrome.
+
+`window` is also often used to share variables between script files.
+
+```js
+window.location.href = 'https://google.com'
+window.history.back()
+history.pushState({name: 'alex'}, "ignored title", "dev.html");
+```
+
+
+## [Navigator](https://devdocs.io/dom/navigator)
+`navigator` is where JavaScript interacts with addition functions of the browser.
+
+```js
+navigator.getGamepads()
+navigator.geolocation
+```
+
 
 ## Global Scope
 All of the scripts loaded by a web page share the same root scope.

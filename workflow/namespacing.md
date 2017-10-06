@@ -32,7 +32,6 @@ See [*workflow/example-namespaces/*](./example-namespaces) for this code.
   window.Example = window.Example || {};
   window.Example.Users = {getDisplayName, getJobTitle};
 })();
-
 ```
 
 ```js
@@ -53,5 +52,4 @@ See [*workflow/example-namespaces/*](./example-namespaces) for this code.
   displayNameElem.innerText = getDisplayName(user);
   jobTitleElem.innerText = getJobTitle(user);
 })();
-
 ```

@@ -74,10 +74,13 @@ Promise.resolve(`hey`)
 .catch(err => console.error(err))
 ```
 
-### 10 TODO: Prototypes
+### 10 [Prototypes](basics/10-prototypes.md)
 ```js
-Array.prototype
+function Foo() {}
+const foo = new Foo()
+foo instanceof Foo
 ```
+
 
 ## Workflow
 
@@ -106,8 +109,17 @@ console.log(Numbers.ONE + Numbers.TWO)
 ```
 
 ### 4 [Debugging](./workflow/debugging.md)
+Press `F12`.
 
-### 5 TODO: Modules (on Node.js)
+### 5 [Modules (on Node.js)](./workflow/modules-node.md)
+```js
+// numbers.js
+exports.ONE = 1
+exports.TWO = 2
+// index.js
+const {ONE, TWO} = require('./number.js')
+console.log(ONE + TWO)
+```
 
 
 ## Best Practices
