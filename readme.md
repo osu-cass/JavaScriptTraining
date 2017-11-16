@@ -122,6 +122,24 @@ console.log(ONE + TWO)
 ```
 
 
+## Transpiling
+
+### [Environment](./transpiling/environment.md)
+```shell
+$ npm i -D babel-cli
+$ npm i -g typescript
+```
+
+### [Babel](./transpiling/babel.md)
+```shell
+$ npx babel src/example.js -o dist/example.js
+```
+
+### [TypeScript](./transpiling/typescript.md)
+```shell
+$ npx tsc
+```
+
 ## Best Practices
 *Disclaimer: "how" to write JavaScript is always going to be an opinion, and I haven't been in the business very long. Take this advice with a grain of salt and skepticism.*
 
@@ -137,6 +155,3 @@ If you need to work with old JS.
 - [Strict Mode](oldies/strict-mode.md)
 - [Function Scope](oldies/scope.md)
 - [`this` Problems](oldies/this.md)
-
----
-https://www.destroyallsoftware.com/talks/the-birth-and-death-of-javascript

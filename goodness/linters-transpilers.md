@@ -46,6 +46,6 @@ main =
 ```
 
 ### ESLint
-[ESLint](http://eslint.org/) is a linter (instead of a transpiler for a different language). Linters are tools that check your code for syntax errors, variable name typos, naming conventions, deprecated language features, etc. ESLint can be used easily from [within Atom](https://atom.io/packages/linter-eslint) and other text editors, or from the command line. See the [*.eslintrc*](../.eslintrc) file in this repository for a recommended configuration that uses Standard styling (it will involve installing [npm](https://www.npmjs.com/) packages in your project).
+[ESLint](http://eslint.org/) is a linter (instead of a transpiler for a different language). Linters are tools that check your code for syntax errors, variable name typos, naming conventions, deprecated language features, etc. ESLint can be used easily from [within Atom](https://atom.io/packages/linter-eslint) and other text editors, or from the command line. See the [*.eslintrc*](.eslintrc) file in this repository for an example configuration that uses Standard styling (it will involve installing [npm](https://www.npmjs.com/) packages in your project).
 
 *ESLint does not check types, function signatures, or even whether or not properties exist on objects, but it is a great first resort for happier JavaScript development.*
